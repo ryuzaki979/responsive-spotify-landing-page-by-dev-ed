@@ -8,10 +8,13 @@
 body{
     font-size: 10px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
     cursor: pointer;
 }
 p{
@@ -20,6 +23,9 @@ p{
 }
 h1{
     font-size: 4rem
+}
+h2{
+    font-size: 1.3rem;
 }
 h1 span{
     color:#bc3a80;
@@ -30,17 +36,21 @@ img{
 ul{
     list-style-type: none;
 }
+li{
+    margin-left: 2rem;
+    font-weight: 600;
+}
 
 .background{
     background-color: #2f303a;
+    width: 100%;
+    height: 100vh;
 }
 .container{
     width: 75vw;
     margin: auto;
 }
-.navbar{
-    padding: 2rem 0;
-}
+
 .logo{
     cursor: pointer;
 }
@@ -50,10 +60,14 @@ ul{
     justify-content: space-between;
 }
 .btn{
-    padding: 1rem 2rem;
+    padding: .75rem 1rem;
     background: #1762a7;
+    border-radius: 10px;
     cursor: pointer;
     &:hover{
         background: #3383ce;
     }
 }
+@import 'home';
+@import 'discover';
+@import 'join';

@@ -1,0 +1,62 @@
+.discover-content{
+    margin-top: 10rem;
+    gap: 2rem;
+}
+
+.flex-left{
+    flex: 70%;
+    .flex{
+        justify-content: flex-start;
+        margin: 2rem 0;
+        .box{
+            margin-right: 2rem;
+            text-align: center;
+            background: #202027;
+            height: 15vh;
+            width: 7.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 50%;
+            }
+            h3{
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+.flex-right{
+    flex: 30%;
+}
+
+.discover-footer{
+    background-color: #202027;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    .left{
+        a{
+            margin-right: 2rem;
+            font-weight: bold;
+        }
+    }
+    .right{
+        div{
+            margin-left: 2rem;
+            p{
+                font-weight: 900;
+                cursor: pointer;
+            }
+            img{
+                width: 30px;
+                margin: .5rem;
+            }
+        }
+        
+    }
+}
