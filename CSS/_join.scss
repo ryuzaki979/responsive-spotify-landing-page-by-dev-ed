@@ -8,8 +8,8 @@
 
 .form-content{
     background: #202027;
-    height: 60vh;
-    width: 35vw;
+    height: 500px;
+    width: 375px;
     padding: 1rem 2rem 2rem;
     border-radius: 10px;
     .flex{
@@ -46,17 +46,28 @@
         display: none;
     }
     .round-2{
-        top: -10rem;
-        width: 500px;
-        height: 500px;
+        top: 8.5rem;
+        left: inherit;
+        right: 4rem;
+        width: 25vw;
+        height: 25vw;
     }
     .round-1{
-        left: -5rem;
-        top: 20rem;
-        width: 600px;
-        height: 600px;
+        left: 0rem;
+        top: 30rem;
+        width: 25vw;
+        height: 25vw;
     }
 }
 .discover-footer{
     z-index: 12;
+}
+@media only screen and (max-width: 600px){
+    .join{
+        height: 130vh;
+    }
+   .join-content{
+       flex-direction: column;
+       gap: 3rem;
+   }
 }

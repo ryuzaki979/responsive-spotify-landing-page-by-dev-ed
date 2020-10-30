@@ -42,8 +42,8 @@
     .round{
         border-radius: 50%;
         background: #2f3446;
-        width: 400px;
-        height: 400px;
+        width: 25vw;
+        height: 25vw;
         position: absolute;
         z-index: 9;
     }
@@ -61,7 +61,30 @@
         bottom: 0%;
         right: 0%;
         transform: translate(50%,50%);
-        width: 800px;
-        height: 800px;
+        width: 60vw;
+        height: 60vw;
     }
+}
+@media only screen and (max-width: 600px){
+    .content{
+        width: inherit;
+        position: absolute;
+        bottom: 10%;
+        z-index: 10;
+    }
+    .img-content{
+        display: none;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+.home-flex .flex{
+        display: flex;
+        flex-direction: row;
+}
+
+.hidden{
+    overflow: hidden;
 }

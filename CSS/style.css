@@ -10,7 +10,7 @@ body {
   font-size: 10px;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  position: relative;
 }
 
 a {
@@ -53,7 +53,7 @@ li {
 .background {
   background-color: #2f303a;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
@@ -137,8 +137,8 @@ li {
 .rounds .round {
   border-radius: 50%;
   background: #2f3446;
-  width: 400px;
-  height: 400px;
+  width: 25vw;
+  height: 25vw;
   position: absolute;
   z-index: 9;
 }
@@ -161,8 +161,37 @@ li {
   right: 0%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
-  width: 800px;
-  height: 800px;
+  width: 60vw;
+  height: 60vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: inherit;
+    position: absolute;
+    bottom: 10%;
+    z-index: 10;
+  }
+  .img-content {
+    display: none;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+.home-flex .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .discover-content {
@@ -187,8 +216,8 @@ li {
   margin-right: 2rem;
   text-align: center;
   background: #202027;
-  height: 15vh;
-  width: 7.5vw;
+  height: 7rem;
+  width: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +234,7 @@ li {
 }
 
 .flex-left .flex .box img {
-  width: 50%;
+  width: 20%;
 }
 
 .flex-left .flex .box h3 {
@@ -223,8 +252,12 @@ li {
   background-color: #202027;
   position: absolute;
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   bottom: 0;
+}
+
+.discover-footer .left {
+  margin: 1rem 0;
 }
 
 .discover-footer .left a {
@@ -246,6 +279,57 @@ li {
   margin: .5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .discover-home {
+    height: 150vh;
+  }
+  .discover-content {
+    width: 90%;
+  }
+  .flex-right {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute;
+    width: 75%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .discover-footer {
+    height: 20vh;
+  }
+  .discover-footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discover-footer .container .left a {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  .discover-footer .container .right p {
+    font-size: 1rem;
+  }
+  .discover-footer .container .right .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .join-content {
   position: absolute;
   width: inherit;
@@ -257,8 +341,8 @@ li {
 
 .form-content {
   background: #202027;
-  height: 60vh;
-  width: 35vw;
+  height: 500px;
+  width: 375px;
   padding: 1rem 2rem 2rem;
   border-radius: 10px;
 }
@@ -306,19 +390,34 @@ li {
 }
 
 .join-rounds .round-2 {
-  top: -10rem;
-  width: 500px;
-  height: 500px;
+  top: 8.5rem;
+  left: inherit;
+  right: 4rem;
+  width: 25vw;
+  height: 25vw;
 }
 
 .join-rounds .round-1 {
-  left: -5rem;
-  top: 20rem;
-  width: 600px;
-  height: 600px;
+  left: 0rem;
+  top: 30rem;
+  width: 25vw;
+  height: 25vw;
 }
 
 .discover-footer {
   z-index: 12;
+}
+
+@media only screen and (max-width: 600px) {
+  .join {
+    height: 130vh;
+  }
+  .join-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
